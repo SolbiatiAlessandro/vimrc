@@ -5,10 +5,6 @@ set showcmd
 imap jk <Esc>
 nmap oo o<Esc>
 nmap OO O<Esc>
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
@@ -25,4 +21,7 @@ set tabstop=4
 set shiftwidth=4
 set foldmethod=indent
 nmap <silent> <leader><leader> :noh<Return>
+nmap pdb iimport pdb;pdb.set_trace()<Esc>
+nmap cm <S-i>#<Esc>
+nmap ccm 0wx
 so ~/.vim/plugins.vim
