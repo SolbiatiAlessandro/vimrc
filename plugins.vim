@@ -4,5 +4,6 @@ call vundle#begin()
 Plugin 'w0rp/ale'
 Plugin 'google/vim-maktaba'
 Plugin 'google/vim-coverage'
+Plugin 'davidhalter/jedi-vim'
 call vundle#end()
 filetype plugin indent on
